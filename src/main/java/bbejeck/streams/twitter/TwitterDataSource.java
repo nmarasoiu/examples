@@ -136,7 +136,7 @@ public class TwitterDataSource {
 
     }
 
-    private  Producer<String, String> getKafkaProducer() {
+    public static Producer<String, String> getKafkaProducer() {
         Properties props = new Properties();
         props.put("bootstrap.servers", "localhost:9092");
         props.put("acks", "all");
