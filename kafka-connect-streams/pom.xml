@@ -15,14 +15,22 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     </repositories>
   <properties>
     <!-- Keep versions as properties to allow easy modification -->
-    <confluent.version>3.5.0-SNAPSHOT</confluent.version>
-    <kafka.version>0.11.0.0-SNAPSHOT</kafka.version>
+    <confluent.version>3.3.0</confluent.version>
+    <kafka.version>0.11.0.0</kafka.version>
     <avro.version>1.8.2</avro.version>
     <!-- Maven properties for compilation -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
-  <dependencies>  
+  <dependencies>
+    <!-- extra deps -->
+    <!-- https://mvnrepository.com/artifact/com.satori/satori-rtm-sdk -->
+    <dependency>
+      <groupId>com.satori</groupId>
+      <artifactId>satori-rtm-sdk</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+
     <!-- Add the Kafka dependencies -->
     <dependency>
       <groupId>io.confluent</groupId>
