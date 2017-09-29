@@ -1,0 +1,7 @@
+{
+  "type" : "record",
+  "name" : "LangStat",
+  "fields" : [
+    { "name" : "count" , "type" : "long" }
+  ]
+}
